@@ -1,13 +1,13 @@
 <?php
 function instablock_build( $atts = array() ) {
 	
-	$atts = shortcode_atts( array( 'id' => '17841403336741569', 'row' => '8', 'limit' => '8', 'mobile' => '4', 'token' => 'IGQVJVUEpBV0x3el9kNjh2d1ZApTDZAKelBsWGFWT3pUdjMzZAHlfWDRKb05kYWxLX0pXQzVFbVFSN2FPMWdfcDlZAVFJ0X3dOM1NMaUxoanFEQkU0Y0hKNi1lOXVUU1E4UkhUdV9sdjc0TlczM19LS2lieQZDZD' ), $atts );
+	$atts = shortcode_atts( array( 'id' => '17841403336741569', 'row' => '8', 'limit' => '8', 'mobile' => '4', 'accesstoken' => 'IGQVJVUEpBV0x3el9kNjh2d1ZApTDZAKelBsWGFWT3pUdjMzZAHlfWDRKb05kYWxLX0pXQzVFbVFSN2FPMWdfcDlZAVFJ0X3dOM1NMaUxoanFEQkU0Y0hKNi1lOXVUU1E4UkhUdV9sdjc0TlczM19LS2lieQZDZD' ), $atts );
 	
 	$client_token = "a3641beed22018cc9a9a960f0a7b06cf";
 	$app_id = '250845666659538';
 
 	$feedid = $atts['id'];
-	$access_token = $atts['token'];
+	$access_token = $atts['accesstoken'];
 	$row = $atts['row'];
 	function isMobileDevice() { 
 		return preg_match("/(android|avantgo|blackberry|bolt|boost|cricket|docomo|fone|hiptop|mini|mobi|palm|phone|pie|tablet|up\.browser|up\.link|webos|wos)/i" , $_SERVER["HTTP_USER_AGENT"]); 

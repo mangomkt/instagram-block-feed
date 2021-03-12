@@ -1,0 +1,11 @@
+*release_excludes.lst*
+*.DS_Store*
+*.git*
+*Docker*
+*docker*
+*.psd*
+*.ini*
+*.psd*
+*sftp-config*
+*.swp*
+*.github*
